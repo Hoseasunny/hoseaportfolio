@@ -34,7 +34,7 @@ nav a{text-decoration:none;color:var(--muted);transition:color .2s}nav a:hover{c
 nav a.btn{color:var(--ink);padding:9px 18px}
 .btn{display:inline-block;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;background:var(--accent);color:#2a1800;border:1px solid transparent;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 24px rgba(255,193,94,.35)}
 .btn:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(255,193,94,.5)}
-.wa-btn{background:#25d366!important;color:#06210f!important;box-shadow:0 6px 24px rgba(37,211,102,.4)!important}
+.wa-btn{background:#25d366!important;color:#06210f!important;box-shadow:0 6px 24px rgba(37,211,102,.4)!important;width:200px;height:50px;display:flex;align-items:center;justify-content:center;gap:6px;font-weight:700;border-radius:999px;transition:transform .25s,box-shadow .25s}
 .btn.alt{background:var(--chip);color:var(--fg);border-color:var(--gline);box-shadow:none;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
 main{position:relative;z-index:1}
 section{min-height:100vh;min-height:100svh;padding:120px clamp(16px,5vw,64px) 80px;display:flex;flex-direction:column;justify-content:center}
@@ -165,7 +165,7 @@ footer{position:relative;z-index:1;text-align:center;padding:20px 20px calc(env(
   <form id="f" novalidate><h3>Message me on WhatsApp</h3>
     <label class="vh" for="n">Your name</label><input id="n" name="name" autocomplete="name" placeholder="Your name" required>
     <label class="vh" for="m">What do you need?</label><textarea id="m" name="message" placeholder="What do you need? (for example: a website for my shop)" required></textarea>
-    <button class="btn wa-btn" id="sb" type="submit" style="border:0;cursor:pointer;font:inherit;font-weight:700">Send on WhatsApp</button>
+    <button class="btn wa-btn" id="sb" type="submit" style="border:0;cursor:pointer;font:inherit;font-weight:700";>Send on WhatsApp</button>
     <p id="st" role="status" aria-live="polite" style="margin:0;min-height:1.5em;color:var(--muted)">Opens WhatsApp with your message ready to send.</p>
   </form>
 </div></div></section>
